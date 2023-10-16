@@ -28,7 +28,7 @@ export default function ComboBox() {
         />
       </div>
       <ul
-        className={`bg-white mt-2 overflow-y-auto none absolute z-50 w-72 ${
+        className={`bg-white mt-2 overflow-y-auto absolute z-50 w-72 ${
           open
             ? "max-h-60 border border-black rounded shadow-lg cursor-pointer"
             : "max-h-0"
