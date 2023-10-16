@@ -7,7 +7,7 @@ export default function ComboBox() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="w-72 font-medium h-80">
+    <div className="w-72 font-medium relative inline-block">
       <div
         onClick={() => setOpen((prev) => !prev)}
         className={`bg-white w-full px-6 py-2 flex items-center justify-between rounded border border-black cursor-pointer ${
@@ -28,7 +28,7 @@ export default function ComboBox() {
         />
       </div>
       <ul
-        className={`bg-white mt-2 max-h-60 overflow-y-auto ${
+        className={`bg-white mt-2 overflow-y-auto none absolute z-50 w-72 ${
           open
             ? "max-h-60 border border-black rounded shadow-lg cursor-pointer"
             : "max-h-0"
